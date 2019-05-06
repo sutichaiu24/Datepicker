@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Date picker</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>877b0b5e-6a11-42b2-acd4-91510a9ba0b8</testCaseGuid>
+   <variable>
+      <defaultValue>'34 years, 4 months, and 5 days'</defaultValue>
+      <description></description>
+      <id>296e44dd-a914-420d-a3af-379acb52082e</id>
+      <masked>false</masked>
+      <name>Age</name>
+   </variable>
+   <variable>
+      <defaultValue>'412 months and 5 days'</defaultValue>
+      <description></description>
+      <id>5632b372-8c24-4a22-8f55-695a0d4791e4</id>
+      <masked>false</masked>
+      <name>ageInMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8b119677-0af4-49ed-a028-7cacc22445ec</id>
+      <masked>false</masked>
+      <name>ageInWeek</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>35deb4d4-7172-41e3-aa0f-eb3425a2d4c4</id>
+      <masked>false</masked>
+      <name>ageInDays</name>
+   </variable>
+</TestCaseEntity>
