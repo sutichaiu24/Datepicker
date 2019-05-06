@@ -6,14 +6,17 @@
    <elementGuidId>f19d51ae-5d14-4cad-85b0-86e2669a7b2c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
          <value>//*[@id=&quot;results&quot;]/div[3]/div[2]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

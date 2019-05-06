@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_Age</name>
+   <name>lb_DoB</name>
    <tag></tag>
-   <elementGuidId>f760ffa6-da1c-4095-b2a1-b86f8ea7e792</elementGuidId>
+   <elementGuidId>7840b61c-8714-4654-bc98-1c5f8c4bf71f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#results > div:nth-child(1) > div.col-xs-7.col-sm-9</value>
+         <value>#calculator-form > div:nth-child(2) > label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_Age</name>
+   <name>header</name>
    <tag></tag>
-   <elementGuidId>f760ffa6-da1c-4095-b2a1-b86f8ea7e792</elementGuidId>
+   <elementGuidId>ae029af8-2d53-48e6-a847-1138515a8b85</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;content&quot;]/div/div/h1</value>
+      </entry>
+      <entry>
          <key>CSS</key>
-         <value>#results > div:nth-child(1) > div.col-xs-7.col-sm-9</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

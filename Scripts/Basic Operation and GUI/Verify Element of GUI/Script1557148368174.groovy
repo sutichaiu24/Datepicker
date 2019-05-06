@@ -15,23 +15,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('www.calculatestuff.com/miscellaneous/age-calculator')
 
-WebUI.click(findTestObject('txt_DateOfBirth'))
+WebUI.verifyElementText(findTestObject('btn_submit'), '')
 
-WebUI.delay(2)
+WebUI.verifyElementVisible(findTestObject('txt_DateOfBirth'), FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'framework.component.handleDatepicker'(findTestObject('datePicker'), '12', 'Jan', '1850')
+WebUI.verifyElementVisible(findTestObject('txt_AgeatDate'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('btn_submit'))
+WebUI.verifyElementText(findTestObject('lb_DoB'), 'Date of Birth')
 
-WebUI.delay(4)
+WebUI.verifyElementText(findTestObject('lb_AgeatDate'), 'Age at Date')
 
-WebUI.verifyElementText(findTestObject('txt_Age'), '')
-
-WebUI.verifyElementText(findTestObject('txt_AgeInMonths'), '')
-
-WebUI.verifyElementText(findTestObject('txt_AgeinWeeks'), '')
-
-WebUI.verifyElementText(findTestObject('txt_AgeInDays'), '')
-
-WebUI.closeBrowser()
+WebUI.verifyElementText(findTestObject('header'), 'Age Calculator')
 
