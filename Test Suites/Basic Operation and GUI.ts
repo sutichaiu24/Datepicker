@@ -19,8 +19,8 @@
          <combinationType>ONE</combinationType>
          <id>2eaeb78d-d74f-4bf0-878e-0a6adf33c17b</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <iterationType>ALL</iterationType>
+            <value>2-2</value>
          </iterationEntity>
          <testDataId>Data Files/TestDate</testDataId>
       </testDataLink>
@@ -108,5 +108,11 @@
          <value>ExpectMonth</value>
          <variableId>ac12c056-3c10-4487-a505-916c0fed49f0</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c709a02-1dea-46e0-9cff-d2f297bada0a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Basic Operation and GUI/Verify Element of GUI</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
