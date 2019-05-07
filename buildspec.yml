@@ -9,5 +9,4 @@ phases:
          - docker run -t --rm -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Basic Operation and GUI" -executionProfile="default"
    artifacts:
     files:
--    - report/*
--
+         - report/*
