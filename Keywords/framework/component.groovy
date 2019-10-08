@@ -45,7 +45,7 @@ class component{
 			String exp_Year) throws Exception {
 		String expDate = null, calYear = null,datepickerText=null,minYear=null,maxYear=null;
 		String expMonth = null , expectYear = 0;
-		
+
 		List<WebElement> noOfDays=null,noOfMonths=null,noOfYears=null;
 		boolean dateNotFound = true;
 
@@ -57,18 +57,17 @@ class component{
 
 
 		while (dateNotFound) {
-		
+
 			String Year = driver.findElement(By.xpath("//div[@class='datepicker-years']/table/thead/tr[2]/th[2]")).getText();
 			def String[] yearPicker = Year.split("-");
 			minYear = yearPicker[0]
 			maxYear = yearPicker[1]
-			
-			if (Integer.parseInt(expectYear)<= Integer.parseInt(minYear))
-			{
+
+			if (Integer.parseInt(expectYear)<= Integer.parseInt(minYear)) {
 				if ((Integer.parseInt(expectYear) >= Integer.parseInt(minYear)) && (Integer.parseInt(expectYear) <= Integer.parseInt(maxYear))) {
 					Thread.sleep(2000);
 					WebElement datePicker = driver.findElement(By.xpath("//div[@class='datepicker-years']/table"));
-					noOfYears = datePicker.findElements(By.cssSelector("span.year"));  				
+					noOfYears = datePicker.findElements(By.cssSelector("span.year"));
 					for (WebElement year : noOfYears) {
 						if (expectYear.equalsIgnoreCase(year.getText())) {
 							year.click();
@@ -80,8 +79,8 @@ class component{
 					driver.findElement(By.xpath("//div[@class='datepicker-years']/table/thead/tr[2]/th[1]")).click();
 				}
 			}
-				else if ((Integer.parseInt(expectYear) >= Integer.parseInt(minYear)) && (Integer.parseInt(expectYear) <= Integer.parseInt(maxYear))) {
-                WebElement datePicker = driver.findElement(By.xpath("//div[@class='datepicker-years']/table"));
+			else if ((Integer.parseInt(expectYear) >= Integer.parseInt(minYear)) && (Integer.parseInt(expectYear) <= Integer.parseInt(maxYear))) {
+				WebElement datePicker = driver.findElement(By.xpath("//div[@class='datepicker-years']/table"));
 				noOfYears = datePicker.findElements(By.cssSelector("span.year"));
 				for (WebElement year : noOfYears) {
 					if (expectYear.equalsIgnoreCase(year.getText())) {
@@ -96,26 +95,24 @@ class component{
 				driver.findElement(By.cssSelector("body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top > div.datepicker-years > table > thead > tr:nth-child(2) > th.next")).click();
 			}
 		}
-			WebElement monthPicker = (driver).findElement(By.xpath("//div[@class='datepicker-months']/table"));
-			noOfMonths = monthPicker.findElements(By.cssSelector("span.month"));
-			for (WebElement month : noOfMonths){
-				if (expMonth.equalsIgnoreCase(month.getText())){
-					month.click();
-					break ;
-				}
+		WebElement monthPicker = (driver).findElement(By.xpath("//div[@class='datepicker-months']/table"));
+		noOfMonths = monthPicker.findElements(By.cssSelector("span.month"));
+		for (WebElement month : noOfMonths){
+			if (expMonth.equalsIgnoreCase(month.getText())){
+				month.click();
+				break ;
 			}
+		}
 
-			Thread.sleep(2000);
-			WebElement dayPicker = (driver).findElement(By.xpath("//div[@class='datepicker-days']/table"));
-			List<WebElement> noOfdays = dayPicker.findElements(By.xpath("//td[contains(@class,'day')]"));
-			for (WebElement day : noOfdays){
-				if (expDate.equalsIgnoreCase(day.getText())){
-					day.click();
-	     		break ;
-				}
+		Thread.sleep(2000);
+		WebElement dayPicker = (driver).findElement(By.xpath("//div[@class='datepicker-days']/table"));
+		List<WebElement> noOfdays = dayPicker.findElements(By.xpath("//td[contains(@class,'day')]"));
+		for (WebElement day : noOfdays){
+			if (expDate.equalsIgnoreCase(day.getText())){
+				day.click();
+				break ;
 			}
-		
-		
+		}
 	}
 }
 
